@@ -51,7 +51,6 @@ let mapleader=","
 map <leader>d :NERDTreeToggle<CR>
 map <D-/> :call NERDComment(0, "toggle")<CR>
 map gcc :call NERDComment(0, "toggle")<CR>
-map <D-p> :CtrlP<CR>
 map <leader>p :CtrlP<CR>
 map <D-r> :TagbarToggle<CR>
 map <leader>r :TagbarToggle<CR>
