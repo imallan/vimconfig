@@ -58,6 +58,8 @@ map gcc :call NERDComment(0, "toggle")<CR>
 map <leader>p :CtrlP<CR>
 map <D-r> :TagbarToggle<CR>
 map <leader>r :TagbarToggle<CR>
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
 
 set number
 
@@ -84,7 +86,7 @@ let g:syntastic_javascript_eslint_exec = 'eslint'
 
 
 " autocomplete
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<ENTER>']
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<ENTER>', '<C-Space>']
 
 " tagbar
 let g:tagbar_autofocus = 1
@@ -96,3 +98,6 @@ set noeb vb t_vb=
 set foldmethod=syntax
 set foldlevel=0
 set nofoldenable
+
+" easy motion
+let g:EasyMotion_smartcase = 1
