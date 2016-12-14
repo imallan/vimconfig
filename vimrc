@@ -16,8 +16,6 @@ call vundle#end()            " required
 " ensure ftdetect et al work by including this after the Vundle stuff
 filetype plugin indent on
 
-filetype plugin indent on    " required
-
 set tabstop=2
 set shiftwidth=2
 set expandtab
@@ -38,6 +36,12 @@ if has("gui_macvim")
 endif
 
 syntax on 
+
+" Indent Guide Line
+" indentLine will overwrite 'conceal' color with grey by default. 
+" If you want to highlight conceal color with your colorscheme, disable by:
+" let g:indentLine_setColors = 0
+let g:indentLine_char = '┆'
 
 " diable left and right scrollbar
 set guioptions-=L
@@ -87,3 +91,8 @@ let g:tagbar_autofocus = 1
 
 " no error beeping
 set noeb vb t_vb=
+
+" code folding
+set foldmethod=syntax
+set foldlevel=0
+set nofoldenable
