@@ -28,6 +28,7 @@ set wildmenu " show a navigable menu for tab completion
 set wildmode=longest,list,full"
 set mouse=a
 
+
 colorscheme molokai
 
 if has("gui_macvim")
@@ -60,6 +61,7 @@ map <D-r> :TagbarToggle<CR>
 map <leader>r :TagbarToggle<CR>
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
+map <leader>D :Dash<CR>
 
 set number
 
@@ -86,7 +88,8 @@ let g:syntastic_javascript_eslint_exec = 'eslint'
 
 
 " autocomplete
-let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<ENTER>', '<C-Space>']
+let g:ycm_key_list_select_completion = ['<TAB>', '<Down>', '<C-Space>', '<ENTER>']
+
 
 " tagbar
 let g:tagbar_autofocus = 1
@@ -101,3 +104,13 @@ set nofoldenable
 
 " easy motion
 let g:EasyMotion_smartcase = 1
+
+function! PrettyJson() 
+  %! python -m json.tool
+  setfiletype json
+endfunction
+
+:command PrettyJson call PrettyJson()
+
+" dash
+let g:dash_map = { 'java': ['android', 'java'] }
