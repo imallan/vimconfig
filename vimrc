@@ -120,3 +120,4 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetsDir="~/.vim/Snips/"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/Snips/']
+let g:UltiSnipsJumpForwardTrigger="<enter>"
