@@ -121,3 +121,6 @@ let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsSnippetsDir="~/.vim/Snips/"
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/Snips/']
 let g:UltiSnipsJumpForwardTrigger="<enter>"
+
+
+let g:vim_json_syntax_conceal = 0
