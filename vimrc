@@ -10,6 +10,10 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
+if filereadable(expand("~/.vimrc.bundles.local"))
+  source ~/.vimrc.bundles.local
+endif
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 
@@ -124,3 +128,8 @@ let g:UltiSnipsJumpForwardTrigger="<enter>"
 
 
 let g:vim_json_syntax_conceal = 0
+
+
+if filereadable(expand("~/.vimrc.local"))
+  source ~/.vimrc.local
+endif
