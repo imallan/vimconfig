@@ -60,13 +60,13 @@ let mapleader=","
 map <leader>d :NERDTreeToggle<CR>
 map <D-/> :call NERDComment(0, "toggle")<CR>
 map gcc :call NERDComment(0, "toggle")<CR>
-map <leader>p :FZF<CR>
+map <leader>p :FZF -i<CR>
 map <D-r> :TagbarToggle<CR>
 map <leader>r :TagbarToggle<CR>
 map  / <Plug>(easymotion-sn)
 omap / <Plug>(easymotion-tn)
 map <leader>D :Dash<CR>
-map <C-p> :FZF<CR>
+map <C-p> :FZF -i<CR>
 
 set number
 
